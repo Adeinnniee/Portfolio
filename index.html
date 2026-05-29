@@ -1073,6 +1073,10 @@
         <div class="insight-text">Manual food logging was rejected universally. "I'm not going to type everything I eat." The only acceptable interaction model was: take a picture, get an answer.</div>
       </div>
       <div class="insight-item">
+        <div class="insight-label">Finding 04 - The snack problem</div>
+        <div class="insight-text">Students regularly take pictures of snacks (biscuits, crisps, chin-chin) as part of their daily meals. A model that returned an error or empty result for these would feel broken and dismissive. Rather than ignoring this, a deliberate seventh class, Snacks, was added to handle it gracefully, returning a clear message that the item is a snack and not part of the 6 balanced food groups.</div>
+      </div>
+      <div class="insight-item">
         <div class="insight-label">Insight that shaped the product</div>
         <div class="insight-text">The product had to be Nigerian-first, effortless, and non-judgmental. One picture. Instant result. No guilt. No complexity. That became the product's north star.</div>
       </div>
@@ -1114,8 +1118,11 @@
   <div class="build-grid reveal">
     <div class="build-card">
       <div class="build-placeholder">
-        <div class="placeholder-icon">📱</div>
-        <div class="placeholder-text">Add Figma<br>Design Screens</div>
+        <img src = "" alt = "Splashscreen">
+        <img src = "" alt = "Welcome screen">
+        <img src = "" alt = "Signup screen">
+        <img src = "" alt = "First user home page">
+        <img src = "" alt = "Returning user home page">
       </div>
       <div class="build-card-body">
         <h4>UX Design<br>Figma</h4>
@@ -1125,8 +1132,11 @@
 
     <div class="build-card">
       <div class="build-placeholder">
-        <div class="placeholder-icon">📸</div>
-        <div class="placeholder-text">Add Mobile App<br>Screenshots</div>
+        <img src = "" alt = "Splashscreen">
+        <img src = "" alt = "Welcome screen">
+        <img src = "" alt = "Signup screen">
+        <img src = "" alt = "First user home page">
+        <img src = "" alt = "Returning user home page">
       </div>
       <div class="build-card-body">
         <h4>Mobile App<br>React Native</h4>
@@ -1136,8 +1146,11 @@
 
     <div class="build-card">
       <div class="build-placeholder">
-        <div class="placeholder-icon">🧠</div>
-        <div class="placeholder-text">Add AI Pipeline<br>Diagram</div>
+        <img src = "" alt = "Splashscreen">
+        <img src = "" alt = "Welcome screen">
+        <img src = "" alt = "Signup screen">
+        <img src = "" alt = "First user home page">
+        <img src = "" alt = "Returning user home page">
       </div>
       <div class="build-card-body">
         <h4>AI Model<br>MobileNetV2</h4>
@@ -1169,16 +1182,16 @@
       <div class="impact-desc">Nigerian food groups classified accurately by a custom-trained AI model</div>
     </div>
     <div class="impact-card">
-      <div class="impact-value">85%+</div>
-      <div class="impact-desc">AI classification accuracy achieved on Nigerian meal test dataset</div>
+      <div class="impact-value">67%</div>
+      <div class="impact-desc">AI classification accuracy on a custom Nigerian meal dataset, a baseline for a model trained from scratch on locally sourced food data.</div>
     </div>
     <div class="impact-card">
       <div class="impact-value">End-to-end</div>
-      <div class="impact-desc">Full product ownership — research, design, frontend, backend, AI model, and deployment</div>
+      <div class="impact-desc">Full product ownership across research, design, frontend, AI model, and deployment, with backend collaboration</div>
     </div>
     <div class="impact-card">
-      <div class="impact-value">First</div>
-      <div class="impact-desc">AI-powered nutrition app trained specifically on Nigerian university student meals</div>
+      <div class="impact-value">One of the first</div>
+      <div class="impact-desc">AI-powered nutrition apps trained specifically on Nigerian university student meals</div>
     </div>
   </div>
 </section>
@@ -1194,30 +1207,38 @@
       <h3>What I Learned</h3>
       <div class="reflection-item">
         <div class="reflection-dot"></div>
-        <p>Owning an AI product end-to-end taught me that the hardest PM skill is not writing the PRD — it is deciding what not to build. Every feature cut was a negotiation between user delight and shipping reality.</p>
+        <p>Owning an AI product end-to-end taught me that the hardest PM skill is not writing the PRD, it is deciding what not to build. Every feature cut was a negotiation between user delight and shipping reality.</p>
       </div>
       <div class="reflection-item">
         <div class="reflection-dot"></div>
-        <p>Data quality is a product problem, not just an engineering problem. The model was only as good as the Nigerian food images we trained it on — and curating that dataset required as much product thinking as any feature decision.</p>
+        <p>Data quality is a product problem, not just an engineering one. The model was only as good as the Nigerian food images we trained it on, and curating that dataset required as much product thinking as any feature decision.</p>
       </div>
       <div class="reflection-item">
         <div class="reflection-dot"></div>
-        <p>User interviews conducted in the early research phase saved weeks of building the wrong thing. The insight that manual logging was universally rejected changed the entire product direction before a single line of code was written.</p>
+        <p>User interviews in the early research phase saved weeks of building the wrong thing. The insight that manual food logging was universally rejected changed the entire product direction before a single line of code was written.</p>
+      </div>
+      <div class="reflection-item">
+        <div class="reflection-dot"></div>
+        <p>The model was trained on 7 food classes rather than 6; the extra class, Snacks, was a deliberate product call. Nigerian students snack as part of their daily reality. Returning an error for something they genuinely consume would break trust. Naming it and accounting for it keeps the experience honest without being dismissive.</p>
       </div>
     </div>
     <div class="reflection-card">
       <h3>What I Would Improve</h3>
       <div class="reflection-item">
         <div class="reflection-dot"></div>
-        <p>I would run a structured beta test with 30–50 real university students before calling v1 complete. Shipping to real users earlier — even with a rougher product — would have generated better model correction data and stronger retention insights.</p>
+        <p>I would run a structured beta test with 30–50 real university students before calling version 1 complete. Shipping to real users earlier, even with a rougher product, would have generated better model correction data and stronger retention insights.</p>
       </div>
       <div class="reflection-item">
         <div class="reflection-dot"></div>
-        <p>The onboarding flow could be reduced from 4 screens to 2. In retrospect, collecting dietary restrictions upfront added friction without meaningfully improving the first-time experience.</p>
+        <p>I would define success metrics more rigorously before building, not after. The north star metric, Weekly Active Meal Analyses, should have been the compass for every feature decision from day one.</p>
       </div>
       <div class="reflection-item">
         <div class="reflection-dot"></div>
-        <p>I would define success metrics more rigorously before building, not after. The North Star Metric — Weekly Active Meal Scans — should have been the compass for every feature decision from day one.</p>
+        <p>The model achieved 67% validation accuracy on a 300-image Nigerian food dataset. Expanding the training data is the clearest path to improving this, both the quality and volume of images directly determine model performance.</p>
+      </div>
+      <div class="reflection-item">
+        <div class="reflection-dot"></div>
+        <p>I would prioritise solving visual food labelling on the meal image. The original intent was for identified food groups to be labelled directly on the uploaded photo, followed by the analysis summary and tips. Technical constraints meant only the analysis summary and tips were implemented. Achieving the full flow in a future version would make the AI output feel more grounded and help users connect what they see on their plate to the feedback they receive.</p>
       </div>
     </div>
   </div>
@@ -1229,14 +1250,14 @@
     <p class="section-label">Downloads</p>
     <h2 class="section-title">Take a closer look.</h2>
     <div class="downloads-grid">
-      <a href="#" class="download-card">
+      <a href="Ini-Adeye-Cv.pdf" class="download-card">
         <div class="download-icon">📄</div>
         <div class="download-info">
-          <h4>Resume</h4>
-          <p>PDF · Updated June 2026</p>
+          <h4>CV</h4>
+          <p>PDF · Updated May 2026</p>
         </div>
       </a>
-      <a href="#" class="download-card">
+      <a href="PlateLensAI-Prd.pdf" class="download-card">
         <div class="download-icon">📋</div>
         <div class="download-info">
           <h4>PlateLensAI PRD</h4>
@@ -1251,7 +1272,7 @@
 <section class="contact" id="contact">
   <p class="section-label">Contact</p>
   <h2 class="section-title">Let's build something.</h2>
-  <p class="contact-sub">Always happy to connect with curious, driven people who love talking about technology, products, and ideas.</p>
+  <p class="contact-sub">Always happy to connect with curious people who love talking about technology, products, and ideas.</p>
   <div class="contact-links">
     <a href="mailto:iniadeye708@gmail.com" class="contact-link">
       ✉ iniadeye708@gmail.com
@@ -1264,7 +1285,6 @@
 
 <footer>
   <p>© 2026 Inioluwa Adeye</p>
-  <p>Built with intention. Designed with care.</p>
 </footer>
 
 <script>
