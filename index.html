@@ -590,19 +590,25 @@
   height: 4px;
 }
 
-.build-placeholder::-webkit-scrollbar-thumb {
-  background: rgba(61,107,138,0.3);
-  border-radius: 4px;
-}
+  .build-placeholder::-webkit-scrollbar-thumb {
+    background: rgba(61,107,138,0.3);
+    border-radius: 4px;
+  }
+  
+  .build-placeholder img {
+    height: 480px;
+    width: auto;
+    border-radius: 16px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    object-fit: contain;
+  }
 
-.build-placeholder img {
-  height: 480px;
-  width: auto;
-  border-radius: 16px;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  object-fit: contain;
+  .build-placeholder img.wide-screen {
+  height: auto;
+  width: 480px;
+  align-self: center;
 }
 
   .placeholder-icon {
@@ -1152,7 +1158,7 @@
 
     <div class="build-card">
       <div class="build-placeholder">
-        <img src = "imgs/System_Architecture.png" alt = "System Architecture">
+        <img src = "imgs/System_Architecture.png" alt = "System Architecture" class="wide-screen">
       </div>
       <div class="build-card-body">
         <h4>AI Model<br>MobileNetV2</h4>
