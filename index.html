@@ -553,12 +553,18 @@
 
 /* ── BUILD ── */
   .build { background: var(--cream); }
-  .build-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  ..build-grid {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     margin-top: 3rem;
-  }
+}
+
+  .build-row-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
   
   .build-card {
     background: var(--white);
