@@ -565,6 +565,16 @@
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
+
+  .build-row-bottom {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.build-row-bottom .build-card {
+  width: calc(50% - 0.75rem);
+}
   
   .build-card {
     background: var(--white);
@@ -999,7 +1009,7 @@
     <div class="about-text">
       <p class="section-label">About</p>
       <h2 class="section-title">Logic meets Beauty.</h2>
-      <p>I am a <strong>Product Designer and Computer Science graduate</strong> from the University of Ibadan, moving into AI Product Management. My CS background gives me a clear understanding of how systems are built. Design taught me how people actually behave. Product Management is where both come together.</p>
+      <p>I am a <strong>Product Designer</strong> and <strong>Computer Science graduate</strong> from the University of Ibadan, moving into AI Product Management. My CS background gives me a clear understanding of how systems are built. Design taught me how people actually behave. Product Management is where both come together.</p>
       <p>Over the past year, I have shipped 40+ screens across mobile apps, web platforms, and complex dashboards at 2 companies, working directly with engineering teams to deliver products that are both functional and easy to use.</p>
       <p>My final-year project, PlateLensAI, brought it all together, from problem definition and user research to a React Native frontend and a fine-tuned AI model trained on Nigerian meal images. It is the kind of work that reflects what I care about most: understanding a problem deeply, then building something that actually solves it.</p>
     </div>
@@ -1164,8 +1174,9 @@
     </div>
   </div>
 
-  <div class="build-card build-card-wide">
-    <div class="build-placeholder build-placeholder-wide">
+<div class="build-row-bottom">  
+  <div class="build-card">
+    <div class="build-placeholder">
       <img src="imgs/System_Architecture.png" alt="System Architecture" class="wide-screen">
     </div>
     <div class="build-card-body">
@@ -1173,6 +1184,7 @@
       <p>Transfer learning from ImageNet. Staged training: frozen backbone → classifier head → selective fine-tuning. Early stopping to prevent overfitting.</p>
     </div>
   </div>
+</div>
 </div>
 
   
