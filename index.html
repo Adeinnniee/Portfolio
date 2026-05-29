@@ -438,8 +438,8 @@
 
   .problem-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    grid-template-columns: 1fr 0.7fr 0.7fr;
+    gap: 2rem;
     margin-top: 3rem;
   }
 
@@ -566,16 +566,15 @@
   gap: 1.5rem;
 }
 
-  .build-row-bottom {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 50rem;
+.build-row-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .build-row-bottom .build-card {
-  width: calc(50% - 0.75rem);
-  flex-shrink: 0;
-  flex-grow: 0;
+  grid-column: 1;
 }
   
   .build-card {
@@ -718,7 +717,7 @@
 
   .impact-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 0.3fr 1fr;
     gap: 2rem;
     margin-top: 3rem;
   }
